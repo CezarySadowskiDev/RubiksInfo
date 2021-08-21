@@ -1,20 +1,17 @@
 package rubiks.info
 
-import android.app.Dialog
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.os.Handler
 import android.os.SystemClock
 import android.view.View
 import android.widget.TextView
-import android.widget.Toast
 import androidx.constraintlayout.widget.ConstraintLayout
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
-import org.w3c.dom.Text
 import java.util.ArrayList
 
-class StopwatchActivity : AppCompatActivity(), TimeInterface {
+class StopwatchActivity : AppCompatActivity() {
 
     private var stopWatchStatus: Int = 1
 
@@ -49,25 +46,25 @@ class StopwatchActivity : AppCompatActivity(), TimeInterface {
 
                 val milliseconds = (updateTime % 1000).toInt()
 
-                val stopWatchString = String.format("%02d", min) + ":" + String.format("%02d", sec) + ":" +
-                        String.format("%03d", milliseconds)
+                val stopWatchString =
+                    String.format("%02d", min) + ":" + String.format("%02d", sec) + ":" +
+                            String.format("%03d", milliseconds)
                 stopWatch.text = stopWatchString
                 handler.postDelayed(this, 0)
 
             }
-
         }
 
         linearLayout.setOnClickListener {
 
             when (stopWatchStatus) {
                 0 -> {
-                    stopWatch.text = "00:00:000"
+                    stopWatch.text = getString(R.string.time_zero)
                     stopWatchStatus = 1
 
                     val stopwatchInfo = findViewById<TextView>(R.id.stopwatchInfo)
 
-                    stopwatchInfo.text = "Dotknij, aby rozpocząć pomiar czasu"
+                    stopwatchInfo.text = getString(R.string.start_stopwatch)
 
                 }
                 1 -> {
@@ -79,11 +76,14 @@ class StopwatchActivity : AppCompatActivity(), TimeInterface {
                     val stopwatchInfo = findViewById<TextView>(R.id.stopwatchInfo)
 
                     times.visibility = View.INVISIBLE
-                    stopwatchInfo.text = "Dotknij, aby zakończyć pomiar czasu"
+                    stopwatchInfo.text = getString(R.string.stop_stopwatch)
                 }
                 2 -> {
                     stopWatchStatus = 0
                     handler.removeCallbacks(runnable)
+
+                    val stopwatchInfo = findViewById<TextView>(R.id.stopwatchInfo)
+                    stopwatchInfo.text = getString(R.string.start_stopwatch)
 
                     val time = stopWatch.text.toString()
                     timesList.add(time)
@@ -95,25 +95,7 @@ class StopwatchActivity : AppCompatActivity(), TimeInterface {
                     times.layoutManager = LinearLayoutManager(this)
                     times.adapter = LastTimesAdapter(timesList)
                 }
-
             }
-
         }
-
     }
-
-//    override fun onTimeClick(position: Int) {
-//        super.onTimeClick(position)
-//
-//        Toast.makeText(this, "klikłeś", Toast.LENGTH_SHORT).show()
-//    }
-
-    fun showTimeDialogWindow() {
-        val timeDialog = Dialog(this)
-    }
-
-    override fun showTimeDialogWindow2() {
-        TODO("Not yet implemented")
-    }
-
 }
