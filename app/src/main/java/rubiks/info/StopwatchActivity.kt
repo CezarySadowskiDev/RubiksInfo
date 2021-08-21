@@ -1,17 +1,20 @@
 package rubiks.info
 
+import android.app.Dialog
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.os.Handler
 import android.os.SystemClock
 import android.view.View
 import android.widget.TextView
+import android.widget.Toast
 import androidx.constraintlayout.widget.ConstraintLayout
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
+import org.w3c.dom.Text
 import java.util.ArrayList
 
-class StopwatchActivity : AppCompatActivity() {
+class StopwatchActivity : AppCompatActivity(), TimeInterface {
 
     private var stopWatchStatus: Int = 1
 
@@ -62,6 +65,9 @@ class StopwatchActivity : AppCompatActivity() {
                     stopWatch.text = "00:00:000"
                     stopWatchStatus = 1
 
+                    val stopwatchInfo = findViewById<TextView>(R.id.stopwatchInfo)
+
+                    stopwatchInfo.text = "Dotknij, aby rozpocząć pomiar czasu"
 
                 }
                 1 -> {
@@ -70,7 +76,10 @@ class StopwatchActivity : AppCompatActivity() {
                     handler.postDelayed(runnable, 0)
 
                     val times = findViewById<RecyclerView>(R.id.lastTimesRV)
+                    val stopwatchInfo = findViewById<TextView>(R.id.stopwatchInfo)
+
                     times.visibility = View.INVISIBLE
+                    stopwatchInfo.text = "Dotknij, aby zakończyć pomiar czasu"
                 }
                 2 -> {
                     stopWatchStatus = 0
@@ -91,6 +100,20 @@ class StopwatchActivity : AppCompatActivity() {
 
         }
 
+    }
+
+//    override fun onTimeClick(position: Int) {
+//        super.onTimeClick(position)
+//
+//        Toast.makeText(this, "klikłeś", Toast.LENGTH_SHORT).show()
+//    }
+
+    fun showTimeDialogWindow() {
+        val timeDialog = Dialog(this)
+    }
+
+    override fun showTimeDialogWindow2() {
+        TODO("Not yet implemented")
     }
 
 }
