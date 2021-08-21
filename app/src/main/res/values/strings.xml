@@ -1,3 +1,18 @@
 <resources>
     <string name="app_name">Rubik\'s Info</string>
+    <string name="stopwatch">Stoper</string>
+    <string name="time_updated">Zaktualizowano czas</string>
+    <string name="seconds_limit">Ilość sekund nie może być większa niż 59</string>
+    <string name="time_deleting">Aby usunąć czas, przytrzymaj ten przycisk</string>
+    <string name="time_deleted">Usunięto czas</string>
+    <string name="time_zero">00:00:000</string>
+    <string name="start_stopwatch">Dotknij, aby rozpocząć pomiar czasu</string>
+    <string name="stop_stopwatch">Dotknij, aby zakończyć pomiar czasu</string>
+    <string name="minutes">minuty</string>
+    <string name="seconds">sekundy</string>
+    <string name="milliseconds">milisekundy</string>
+    <string name="colon">:</string>
+    <string name="decline">Odrzuć</string>
+    <string name="apply">Zatwierdź</string>
+    <string name="delete_time">Usuń czas</string>
 </resources>
