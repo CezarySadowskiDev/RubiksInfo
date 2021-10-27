@@ -1,11 +1,13 @@
 package rubiks.info
 
+import android.content.ContentValues
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.os.Handler
 import android.os.SystemClock
 import android.view.View
 import android.widget.TextView
+import android.widget.Toast
 import androidx.constraintlayout.widget.ConstraintLayout
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
@@ -97,5 +99,29 @@ class StopwatchActivity : AppCompatActivity() {
                 }
             }
         }
+    }
+
+    override fun onBackPressed() {
+
+        val dbHelper = DataBaseHelper(this)
+        val db = dbHelper.writableDatabase
+
+        for (time in timesList) {
+            val tempTimeMinutes = time.substring(0, time.indexOf(':')).toInt()
+            val tempTimeSeconds = time.substring(time.indexOf(':') + 1, time.lastIndexOf(':')).toInt()
+            val tempTimeMilliseconds = time.substring(time.lastIndexOf(':') + 1).toInt()
+
+            val dataBaseTime = (tempTimeMinutes * 60 * 1000) + (tempTimeSeconds * 1000) + (tempTimeMilliseconds)
+
+            val value = ContentValues()
+            value.put("time", dataBaseTime)
+
+            db.insertOrThrow(TableInfo.TABLE_NAME, null, value)
+
+            Toast.makeText(this, dataBaseTime.toString(), Toast.LENGTH_SHORT).show()
+
+        }
+
+        super.onBackPressed()
     }
 }
