@@ -15,4 +15,12 @@
     <string name="decline">Odrzuć</string>
     <string name="apply">Zatwierdź</string>
     <string name="delete_time">Usuń czas</string>
+    <string name="statistics">Statystyki</string>
+    <string name="solves_count">Ilość wszystkich ułożeń:</string>
+    <string name="mean_time">Średni czas układania:</string>
+    <string name="mean_time_last_10_solves">Średni czas ostatnich\n10 ułożeń:</string>
+    <string name="best_time">Najlepszy czas:</string>
+    <string name="worst_time">Najgorszy czas:</string>
+    <string name="time_spend_on_solving">Łączny czas poświęcony na układanie:</string>
+    <string name="no_database_info">Aby zobaczyć statystki, dodaj czasy przy pomocy stopera</string>
 </resources>

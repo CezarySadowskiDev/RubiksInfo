@@ -15,5 +15,11 @@ class MainActivity : AppCompatActivity() {
             val intent = Intent(this, StopwatchActivity::class.java)
             startActivity(intent)
         }
+
+        val statisticsCardView = findViewById<CardView>(R.id.mainMenuStatistics)
+        statisticsCardView.setOnClickListener {
+            val intent = Intent(this, StatisticsActivity::class.java)
+            startActivity(intent)
+        }
     }
 }

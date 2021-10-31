@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/statisticsMainLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#4a4a4a"
+    android:orientation="vertical"
+    tools:context=".StatisticsActivity">
+
+    <TableLayout
+        android:id="@+id/statisticsTable"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="5dp">
+
+        <!-- Ilość wszystkich ułożeń -->
+        <TableRow android:padding="5dp">
+
+            <TextView
+                android:id="@+id/solvesCount"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="5dp"
+                android:layout_weight="9"
+                android:text="@string/solves_count"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/solvesCountData"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="4"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+
+        </TableRow>
+
+        <!-- Pozioma linia -->
+        <TableRow
+            android:layout_height="1px"
+            android:background="@color/white">
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="1px"
+                android:layout_span="2" />
+
+        </TableRow>
+
+        <!-- Średni czas układania -->
+        <TableRow android:padding="5dp">
+
+            <TextView
+                android:id="@+id/meanTime"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="5dp"
+                android:layout_weight="9"
+                android:text="@string/mean_time"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/meanTimeData"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="4"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+
+        </TableRow>
+
+        <!-- Pozioma linia -->
+        <TableRow
+            android:layout_height="1px"
+            android:background="@color/white">
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="1px"
+                android:layout_span="2" />
+
+        </TableRow>
+
+        <!-- Średni czas ostatnich 10 ułożeń -->
+        <TableRow android:padding="5dp">
+
+            <TextView
+                android:id="@+id/meanTimeLastTenSolves"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="5dp"
+                android:layout_weight="9"
+                android:text="@string/mean_time_last_10_solves"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/meanTimeLastTenSolvesData"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="4"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+
+        </TableRow>
+
+        <!-- Pozioma linia -->
+        <TableRow
+            android:layout_height="1px"
+            android:background="@color/white">
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="1px"
+                android:layout_span="2" />
+
+        </TableRow>
+
+        <!-- Najlepszy czas -->
+        <TableRow android:padding="5dp">
+
+            <TextView
+                android:id="@+id/bestTime"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="5dp"
+                android:layout_weight="9"
+                android:text="@string/best_time"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/bestTimeData"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="4"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+
+        </TableRow>
+
+        <!-- Pozioma linia -->
+        <TableRow
+            android:layout_height="1px"
+            android:background="@color/white">
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="1px"
+                android:layout_span="2" />
+
+        </TableRow>
+
+        <!-- Najgorszy czas -->
+        <TableRow android:padding="5dp">
+
+            <TextView
+                android:id="@+id/worstTime"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="5dp"
+                android:layout_weight="9"
+                android:text="@string/worst_time"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/worstTimeData"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="4"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+
+        </TableRow>
+
+        <!-- Pozioma linia -->
+        <TableRow
+            android:layout_height="1px"
+            android:background="@color/white">
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="1px"
+                android:layout_span="2" />
+
+        </TableRow>
+
+        <!-- Łączny czas -->
+        <TableRow android:padding="5dp">
+
+            <TextView
+                android:id="@+id/timeSpendOnSolving"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="5dp"
+                android:layout_weight="9"
+                android:text="@string/time_spend_on_solving"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/timeSpendOnSolvingData"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="4"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+
+        </TableRow>
+
+    </TableLayout>
+</LinearLayout>
