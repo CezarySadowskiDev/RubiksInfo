@@ -4,6 +4,7 @@ import android.content.ContentValues
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.os.Handler
+import android.os.Looper
 import android.os.SystemClock
 import android.view.View
 import android.widget.TextView
@@ -31,7 +32,7 @@ class StopwatchActivity : AppCompatActivity() {
 
         val stopWatch = findViewById<TextView>(R.id.stopwatchTextView)
         val linearLayout = findViewById<ConstraintLayout>(R.id.startStopChronometer)
-        val handler = Handler()
+        val handler = Handler(Looper.getMainLooper())
 
         timesList = ArrayList()
 

@@ -21,5 +21,11 @@ class MainActivity : AppCompatActivity() {
             val intent = Intent(this, StatisticsActivity::class.java)
             startActivity(intent)
         }
+
+        val tutorialCardView = findViewById<CardView>(R.id.mainMenuTutorial)
+        tutorialCardView.setOnClickListener {
+            val intent = Intent(this, TutorialActivity::class.java)
+            startActivity(intent)
+        }
     }
 }
