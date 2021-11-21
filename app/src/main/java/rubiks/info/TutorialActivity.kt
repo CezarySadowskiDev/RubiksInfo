@@ -70,6 +70,22 @@ class TutorialActivity : AppCompatActivity() {
         )
         elementsToSetOnClickListener.add(yellowCrossEdgesObject)
 
+        // 6. yellow cross corners part 1
+        val yellowCrossCornersPartOneObject = TutorialSection(
+            findViewById(R.id.yellow_cross_corners_section),
+            findViewById(R.id.yellow_cross_corners_section_button),
+            findViewById(R.id.yellow_cross_corners_section_expansion),
+        )
+        elementsToSetOnClickListener.add(yellowCrossCornersPartOneObject)
+
+        // 7. yellow cross corners rotation
+        val yellowCrossCornersPartTwoObject = TutorialSection(
+            findViewById(R.id.yellow_cross_corners_rotation_section),
+            findViewById(R.id.yellow_cross_corners_rotation_section_button),
+            findViewById(R.id.yellow_cross_corners_rotation_section_expansion),
+        )
+        elementsToSetOnClickListener.add(yellowCrossCornersPartTwoObject)
+
         setOnClickListeners(elementsToSetOnClickListener, scrollView)
     }
 

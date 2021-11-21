@@ -78,7 +78,7 @@
         poprawnie obrócony względem sąsiadujących kolorów. Algorytm należy wtedy powtarzać, aż do
         uzyskania żądanego położenia.
     </string>
-    <string name="tutorial_white_face_corners_step_2">Algorytm który należy w tej sytuacji zastosować to:\n<b>R\' \t D\' \tR \t D</b>
+    <string name="tutorial_white_face_corners_step_2">Algorytm:\n<b>R\' \t D\' \tR \t D</b>
     </string>
     <!-- 3. TUTORIAL SECOND LAYER EDGES -->
     <string name="tutorial_second_layer_edges">3. Krawędzie drugiej warstwy</string>
@@ -87,7 +87,7 @@
         Efekt końcowy widoczny jest na poniższych zdjęciach.
     </string>
     <string name="tutorial_second_layer_edges_step_1">
-        Na tym etapie przydadzą się nam dwa algorytmy. Zanim będzie je jednak można zastosować,
+        Na tym etapie przydadzą się nam dwa algorytmy. Zanim można je będzie jednak zastosować,
         należy odpowiednio przygotować kostkę. Obracamy ją żółtą ścianą do góry (od tego momentu,
         na każdym kolejnym etapie układania kostki, będziemy ją trzymać właśnie w ten sposób) i
         wybieramy krawędź, którą chcemy umieścić na właściwym miejscu. Następnie, obracając żółtą
@@ -164,5 +164,21 @@
     </string>
     <string name="tutorial_yellow_cross_corners_step_2">Algorytm:\n<b>U \tR \tU\' \tL\' \tU
         \tR\' \tU\' \tL</b>
+    </string>
+    <!-- 7. TUTORIAL YELLOW CROSS CORNERS PART 2 -->
+    <string name="tutorial_yellow_cross_corners_rotation">7. Narożniki żółtej warstwy cz.2</string>
+    <string name="tutorial_yellow_cross_corners_rotation_intro">Ostatni etap! Mamy już narożniki
+        żółtej warstwy umieszczone na właściwych miejsach. Ostatnim etapem jest ich obrócenie,
+        czego wynikiem będzie w pełni ułożona kostka. Algorytm którym tego dokonamy jest niezwykle
+        prosty i został już przez nas wykorzystany na etapie drugim. Bardzo istotne jest właściwe
+        trzymanie kostki. Powinna być skierowana żółtą ścianą do góry i nie może być w ogóle
+        obracana. Od tego momentu będziemy kierować się prostym wzorem: obracamy żółtą ścianą tak,
+        aby narożnik do obrócenia znajdował się w prawym dolnym rogu żółtej ściany, a następnie
+        wykonujemy algorytm. Powtarzamy go tak długo, aż żółty narożnik obróci się do właściwej
+        pozycji. Cały wzór powtarzamy aż do momentu ułożenia całej kostki.\nUwaga! Wykonując
+        poniższy algorytm na chwilę "zepsujemy" całą kostkę. Nie należy się tym jednak przejmować,
+        gdyż po ukończeniu całego procesu, wszystkie elementy kostki wrócą na swoje miejsce.
+    </string>
+    <string name="tutorial_yellow_cross_corners_rotation_step_1">Algorytm:\n<b>R\' \t D\' \tR \t D</b>
     </string>
 </resources>

@@ -392,37 +392,57 @@
                     android:textColor="@color/white"
                     android:textSize="16sp" />
 
-                <ImageView
+                <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:layout_marginTop="15dp"
-                    android:layout_marginBottom="15dp"
-                    android:contentDescription="@string/tutorial_image"
-                    android:src="@drawable/ic_cube_r_prime" />
+                    android:orientation="horizontal"
+                    android:weightSum="2">
 
-                <ImageView
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_marginTop="15dp"
-                    android:layout_marginBottom="15dp"
-                    android:contentDescription="@string/tutorial_image"
-                    android:src="@drawable/ic_cube_d_prime" />
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_weight="1"
+                        android:contentDescription="@string/tutorial_image"
+                        android:src="@drawable/ic_cube_r_prime" />
 
-                <ImageView
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_marginTop="15dp"
-                    android:layout_marginBottom="15dp"
-                    android:contentDescription="@string/tutorial_image"
-                    android:src="@drawable/ic_cube_r" />
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_weight="1"
+                        android:contentDescription="@string/tutorial_image"
+                        android:src="@drawable/ic_cube_d_prime" />
 
-                <ImageView
+                </LinearLayout>
+
+                <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:layout_marginTop="15dp"
-                    android:layout_marginBottom="15dp"
-                    android:contentDescription="@string/tutorial_image"
-                    android:src="@drawable/ic_cube_d" />
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_weight="1"
+                        android:contentDescription="@string/tutorial_image"
+                        android:src="@drawable/ic_cube_r" />
+
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_weight="1"
+                        android:contentDescription="@string/tutorial_image"
+                        android:src="@drawable/ic_cube_d" />
+
+                </LinearLayout>
 
             </LinearLayout>
 
@@ -546,69 +566,109 @@
                     android:textColor="@color/white"
                     android:textSize="16sp" />
 
-                <ImageView
+                <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:layout_marginTop="15dp"
-                    android:layout_marginBottom="15dp"
-                    android:contentDescription="@string/tutorial_image"
-                    android:src="@drawable/ic_cube_u" />
+                    android:orientation="horizontal"
+                    android:weightSum="2">
 
-                <ImageView
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_marginTop="15dp"
-                    android:layout_marginBottom="15dp"
-                    android:contentDescription="@string/tutorial_image"
-                    android:src="@drawable/ic_cube_r" />
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_weight="1"
+                        android:contentDescription="@string/tutorial_image"
+                        android:src="@drawable/ic_cube_u" />
 
-                <ImageView
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_marginTop="15dp"
-                    android:layout_marginBottom="15dp"
-                    android:contentDescription="@string/tutorial_image"
-                    android:src="@drawable/ic_cube_u_prime" />
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_weight="1"
+                        android:contentDescription="@string/tutorial_image"
+                        android:src="@drawable/ic_cube_r" />
 
-                <ImageView
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_marginTop="15dp"
-                    android:layout_marginBottom="15dp"
-                    android:contentDescription="@string/tutorial_image"
-                    android:src="@drawable/ic_cube_r_prime" />
+                </LinearLayout>
 
-                <ImageView
+                <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:layout_marginTop="15dp"
-                    android:layout_marginBottom="15dp"
-                    android:contentDescription="@string/tutorial_image"
-                    android:src="@drawable/ic_cube_u_prime" />
+                    android:orientation="horizontal"
+                    android:weightSum="2">
 
-                <ImageView
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_marginTop="15dp"
-                    android:layout_marginBottom="15dp"
-                    android:contentDescription="@string/tutorial_image"
-                    android:src="@drawable/ic_cube_f_prime" />
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_weight="1"
+                        android:contentDescription="@string/tutorial_image"
+                        android:src="@drawable/ic_cube_u_prime" />
 
-                <ImageView
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_marginTop="15dp"
-                    android:layout_marginBottom="15dp"
-                    android:contentDescription="@string/tutorial_image"
-                    android:src="@drawable/ic_cube_u" />
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_weight="1"
+                        android:contentDescription="@string/tutorial_image"
+                        android:src="@drawable/ic_cube_r_prime" />
 
-                <ImageView
+                </LinearLayout>
+
+                <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:layout_marginTop="15dp"
-                    android:layout_marginBottom="15dp"
-                    android:contentDescription="@string/tutorial_image"
-                    android:src="@drawable/ic_cube_f" />
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_weight="1"
+                        android:contentDescription="@string/tutorial_image"
+                        android:src="@drawable/ic_cube_u_prime" />
+
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_weight="1"
+                        android:contentDescription="@string/tutorial_image"
+                        android:src="@drawable/ic_cube_f_prime" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_weight="1"
+                        android:contentDescription="@string/tutorial_image"
+                        android:src="@drawable/ic_cube_u" />
+
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_weight="1"
+                        android:contentDescription="@string/tutorial_image"
+                        android:src="@drawable/ic_cube_f" />
+
+                </LinearLayout>
 
                 <TextView
                     android:layout_width="match_parent"
@@ -618,69 +678,109 @@
                     android:textColor="@color/white"
                     android:textSize="16sp" />
 
-                <ImageView
+                <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:layout_marginTop="15dp"
-                    android:layout_marginBottom="15dp"
-                    android:contentDescription="@string/tutorial_image"
-                    android:src="@drawable/ic_cube_u_prime" />
+                    android:orientation="horizontal"
+                    android:weightSum="2">
 
-                <ImageView
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_marginTop="15dp"
-                    android:layout_marginBottom="15dp"
-                    android:contentDescription="@string/tutorial_image"
-                    android:src="@drawable/ic_cube_l_prime" />
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_weight="1"
+                        android:contentDescription="@string/tutorial_image"
+                        android:src="@drawable/ic_cube_u_prime" />
 
-                <ImageView
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_marginTop="15dp"
-                    android:layout_marginBottom="15dp"
-                    android:contentDescription="@string/tutorial_image"
-                    android:src="@drawable/ic_cube_u" />
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_weight="1"
+                        android:contentDescription="@string/tutorial_image"
+                        android:src="@drawable/ic_cube_l_prime" />
 
-                <ImageView
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_marginTop="15dp"
-                    android:layout_marginBottom="15dp"
-                    android:contentDescription="@string/tutorial_image"
-                    android:src="@drawable/ic_cube_l" />
+                </LinearLayout>
 
-                <ImageView
+                <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:layout_marginTop="15dp"
-                    android:layout_marginBottom="15dp"
-                    android:contentDescription="@string/tutorial_image"
-                    android:src="@drawable/ic_cube_u" />
+                    android:orientation="horizontal"
+                    android:weightSum="2">
 
-                <ImageView
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_marginTop="15dp"
-                    android:layout_marginBottom="15dp"
-                    android:contentDescription="@string/tutorial_image"
-                    android:src="@drawable/ic_cube_f" />
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_weight="1"
+                        android:contentDescription="@string/tutorial_image"
+                        android:src="@drawable/ic_cube_u" />
 
-                <ImageView
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_marginTop="15dp"
-                    android:layout_marginBottom="15dp"
-                    android:contentDescription="@string/tutorial_image"
-                    android:src="@drawable/ic_cube_u_prime" />
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_weight="1"
+                        android:contentDescription="@string/tutorial_image"
+                        android:src="@drawable/ic_cube_l" />
 
-                <ImageView
+                </LinearLayout>
+
+                <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:layout_marginTop="15dp"
-                    android:layout_marginBottom="15dp"
-                    android:contentDescription="@string/tutorial_image"
-                    android:src="@drawable/ic_cube_f_prime" />
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_weight="1"
+                        android:contentDescription="@string/tutorial_image"
+                        android:src="@drawable/ic_cube_u" />
+
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_weight="1"
+                        android:contentDescription="@string/tutorial_image"
+                        android:src="@drawable/ic_cube_f" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_weight="1"
+                        android:contentDescription="@string/tutorial_image"
+                        android:src="@drawable/ic_cube_u_prime" />
+
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_weight="1"
+                        android:contentDescription="@string/tutorial_image"
+                        android:src="@drawable/ic_cube_f_prime" />
+
+                </LinearLayout>
 
             </LinearLayout>
 
@@ -739,60 +839,52 @@
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:orientation="vertical">
+                    android:orientation="horizontal"
+                    android:weightSum="2">
 
-                    <LinearLayout
-                        android:layout_width="match_parent"
+                    <ImageView
+                        android:layout_width="0dp"
                         android:layout_height="match_parent"
-                        android:orientation="horizontal"
-                        android:weightSum="2">
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_weight="1"
+                        android:contentDescription="@string/tutorial_image"
+                        android:src="@drawable/ic_yellow_cross_1" />
 
-                        <ImageView
-                            android:layout_width="0dp"
-                            android:layout_height="match_parent"
-                            android:layout_marginLeft="10dp"
-                            android:layout_marginRight="10dp"
-                            android:layout_weight="1"
-                            android:contentDescription="@string/tutorial_image"
-                            android:src="@drawable/ic_second_layer_edges_1" />
-
-                        <ImageView
-                            android:layout_width="0dp"
-                            android:layout_height="match_parent"
-                            android:layout_marginLeft="10dp"
-                            android:layout_marginRight="10dp"
-                            android:layout_weight="1"
-                            android:contentDescription="@string/tutorial_image"
-                            android:src="@drawable/ic_yellow_cross_2" />
-
-                    </LinearLayout>
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
+                    <ImageView
+                        android:layout_width="0dp"
                         android:layout_height="match_parent"
-                        android:orientation="horizontal"
-                        android:weightSum="2">
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_weight="1"
+                        android:contentDescription="@string/tutorial_image"
+                        android:src="@drawable/ic_yellow_cross_2" />
 
-                        <ImageView
-                            android:layout_width="0dp"
-                            android:layout_height="match_parent"
-                            android:layout_marginLeft="10dp"
-                            android:layout_marginRight="10dp"
-                            android:layout_weight="1"
-                            android:contentDescription="@string/tutorial_image"
-                            android:src="@drawable/ic_yellow_cross_3" />
+                </LinearLayout>
 
-                        <ImageView
-                            android:layout_width="0dp"
-                            android:layout_height="match_parent"
-                            android:layout_marginLeft="10dp"
-                            android:layout_marginRight="10dp"
-                            android:layout_weight="1"
-                            android:contentDescription="@string/tutorial_image"
-                            android:src="@drawable/ic_yellow_cross_4" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
 
-                    </LinearLayout>
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_weight="1"
+                        android:contentDescription="@string/tutorial_image"
+                        android:src="@drawable/ic_yellow_cross_3" />
 
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_weight="1"
+                        android:contentDescription="@string/tutorial_image"
+                        android:src="@drawable/ic_yellow_cross_4" />
 
                 </LinearLayout>
 
@@ -804,53 +896,83 @@
                     android:textColor="@color/white"
                     android:textSize="16sp" />
 
-                <ImageView
+                <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:layout_marginTop="15dp"
-                    android:layout_marginBottom="15dp"
-                    android:contentDescription="@string/tutorial_image"
-                    android:src="@drawable/ic_cube_f" />
+                    android:orientation="horizontal"
+                    android:weightSum="2">
 
-                <ImageView
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_marginTop="15dp"
-                    android:layout_marginBottom="15dp"
-                    android:contentDescription="@string/tutorial_image"
-                    android:src="@drawable/ic_cube_r" />
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_weight="1"
+                        android:contentDescription="@string/tutorial_image"
+                        android:src="@drawable/ic_cube_f" />
 
-                <ImageView
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_marginTop="15dp"
-                    android:layout_marginBottom="15dp"
-                    android:contentDescription="@string/tutorial_image"
-                    android:src="@drawable/ic_cube_u" />
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_weight="1"
+                        android:contentDescription="@string/tutorial_image"
+                        android:src="@drawable/ic_cube_r" />
 
-                <ImageView
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_marginTop="15dp"
-                    android:layout_marginBottom="15dp"
-                    android:contentDescription="@string/tutorial_image"
-                    android:src="@drawable/ic_cube_r_prime" />
+                </LinearLayout>
 
-                <ImageView
+                <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:layout_marginTop="15dp"
-                    android:layout_marginBottom="15dp"
-                    android:contentDescription="@string/tutorial_image"
-                    android:src="@drawable/ic_cube_u_prime" />
+                    android:orientation="horizontal"
+                    android:weightSum="2">
 
-                <ImageView
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_weight="1"
+                        android:contentDescription="@string/tutorial_image"
+                        android:src="@drawable/ic_cube_u" />
+
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_weight="1"
+                        android:contentDescription="@string/tutorial_image"
+                        android:src="@drawable/ic_cube_r_prime" />
+
+                </LinearLayout>
+
+                <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:layout_marginTop="15dp"
-                    android:layout_marginBottom="15dp"
-                    android:contentDescription="@string/tutorial_image"
-                    android:src="@drawable/ic_cube_f_prime" />
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_weight="1"
+                        android:contentDescription="@string/tutorial_image"
+                        android:src="@drawable/ic_cube_u_prime" />
+
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_weight="1"
+                        android:contentDescription="@string/tutorial_image"
+                        android:src="@drawable/ic_cube_f_prime" />
+
+                </LinearLayout>
 
             </LinearLayout>
 
@@ -1032,69 +1154,109 @@
                     android:textColor="@color/white"
                     android:textSize="16sp" />
 
-                <ImageView
+                <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:layout_marginTop="15dp"
-                    android:layout_marginBottom="15dp"
-                    android:contentDescription="@string/tutorial_image"
-                    android:src="@drawable/ic_cube_r" />
+                    android:orientation="horizontal"
+                    android:weightSum="2">
 
-                <ImageView
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_marginTop="15dp"
-                    android:layout_marginBottom="15dp"
-                    android:contentDescription="@string/tutorial_image"
-                    android:src="@drawable/ic_cube_u" />
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_weight="1"
+                        android:contentDescription="@string/tutorial_image"
+                        android:src="@drawable/ic_cube_r" />
 
-                <ImageView
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_marginTop="15dp"
-                    android:layout_marginBottom="15dp"
-                    android:contentDescription="@string/tutorial_image"
-                    android:src="@drawable/ic_cube_r_prime" />
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_weight="1"
+                        android:contentDescription="@string/tutorial_image"
+                        android:src="@drawable/ic_cube_u" />
 
-                <ImageView
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_marginTop="15dp"
-                    android:layout_marginBottom="15dp"
-                    android:contentDescription="@string/tutorial_image"
-                    android:src="@drawable/ic_cube_u" />
+                </LinearLayout>
 
-                <ImageView
+                <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:layout_marginTop="15dp"
-                    android:layout_marginBottom="15dp"
-                    android:contentDescription="@string/tutorial_image"
-                    android:src="@drawable/ic_cube_r" />
+                    android:orientation="horizontal"
+                    android:weightSum="2">
 
-                <ImageView
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_marginTop="15dp"
-                    android:layout_marginBottom="15dp"
-                    android:contentDescription="@string/tutorial_image"
-                    android:src="@drawable/ic_cube_u" />
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_weight="1"
+                        android:contentDescription="@string/tutorial_image"
+                        android:src="@drawable/ic_cube_r_prime" />
 
-                <ImageView
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_marginTop="15dp"
-                    android:layout_marginBottom="15dp"
-                    android:contentDescription="@string/tutorial_image"
-                    android:src="@drawable/ic_cube_u" />
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_weight="1"
+                        android:contentDescription="@string/tutorial_image"
+                        android:src="@drawable/ic_cube_u" />
 
-                <ImageView
+                </LinearLayout>
+
+                <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:layout_marginTop="15dp"
-                    android:layout_marginBottom="15dp"
-                    android:contentDescription="@string/tutorial_image"
-                    android:src="@drawable/ic_cube_r_prime" />
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_weight="1"
+                        android:contentDescription="@string/tutorial_image"
+                        android:src="@drawable/ic_cube_r" />
+
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_weight="1"
+                        android:contentDescription="@string/tutorial_image"
+                        android:src="@drawable/ic_cube_u" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_weight="1"
+                        android:contentDescription="@string/tutorial_image"
+                        android:src="@drawable/ic_cube_u" />
+
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_weight="1"
+                        android:contentDescription="@string/tutorial_image"
+                        android:src="@drawable/ic_cube_r_prime" />
+
+                </LinearLayout>
 
             </LinearLayout>
 
@@ -1139,7 +1301,8 @@
                 android:layout_marginStart="20dp"
                 android:layout_marginEnd="20dp"
                 android:background="@drawable/tutorial_expanded_sections_border"
-                android:orientation="vertical">
+                android:orientation="vertical"
+                android:visibility="gone">
 
                 <TextView
                     android:layout_width="match_parent"
@@ -1292,6 +1455,120 @@
                         android:layout_weight="1"
                         android:contentDescription="@string/tutorial_image"
                         android:src="@drawable/ic_cube_l" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <!-- 7. Narożniki żółtego krzyża cz.2 -->
+            <LinearLayout
+                android:id="@+id/yellow_cross_corners_rotation_section"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:background="@drawable/tutorial_sections_border"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="4"
+                    android:text="@string/tutorial_yellow_cross_corners_rotation"
+                    android:textColor="@color/white"
+                    android:textSize="22sp" />
+
+                <ImageButton
+                    android:id="@+id/yellow_cross_corners_rotation_section_button"
+                    android:layout_width="0dp"
+                    android:layout_height="35dp"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:background="#00FFFFFF"
+                    android:contentDescription="@string/tutorial_image_button"
+                    android:scaleX="2"
+                    android:scaleY="2"
+                    android:src="@drawable/ic_24_expand_arrow" />
+
+            </LinearLayout>
+
+            <!-- 7. Narożniki żółtego krzyża cz.2 rozwinięcie -->
+            <LinearLayout
+                android:id="@+id/yellow_cross_corners_rotation_section_expansion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:background="@drawable/tutorial_expanded_sections_border"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:text="@string/tutorial_yellow_cross_corners_rotation_intro"
+                    android:textColor="@color/white"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:text="@string/tutorial_yellow_cross_corners_rotation_step_1"
+                    android:textColor="@color/white"
+                    android:textSize="16sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_weight="1"
+                        android:contentDescription="@string/tutorial_image"
+                        android:src="@drawable/ic_cube_r_prime" />
+
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_weight="1"
+                        android:contentDescription="@string/tutorial_image"
+                        android:src="@drawable/ic_cube_d_prime" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_weight="1"
+                        android:contentDescription="@string/tutorial_image"
+                        android:src="@drawable/ic_cube_r" />
+
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_weight="1"
+                        android:contentDescription="@string/tutorial_image"
+                        android:src="@drawable/ic_cube_d" />
 
                 </LinearLayout>
 
