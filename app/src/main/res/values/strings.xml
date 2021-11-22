@@ -58,7 +58,7 @@
     <string name="tutorial_white_cross_intro">
         Pierwszym etapem jest ułożenie białego krzyża. Etap ten może być uważany za jeden z
         najtrudniejszych z tego względu, że nie ma tutaj konkretnych algorytmów, które w tym
-        procesie mogłyby pomóc. Chwilowe obcowanie z kostką powinno pozowlić na zrozumienie
+        procesie mogłyby pomóc. Chwilowe obcowanie z kostką powinno pozwolić na zrozumienie
         podstaw jej działania, co w krótkim czasie umożliwi samodzielne ułożenie białego krzyża.
         Na poniższych rysunkach przedstawiony jest wygląd kostki, którego osiągnięcie będzie
         równoznaczne z ukończeniem pierwszego etapu.
@@ -72,8 +72,8 @@
     </string>
     <string name="tutorial_white_face_corners_step_1">
         Aby móc zastosować algorytm należy odpowiednio przygotować kostkę. Biała ściana powinna
-        znajdować się na górze kostki. Narożnik, który chcemy umieścić na jego miejsu, powinien
-        być bezpośrednio pod nim. Następnie wykonujemy podany poniżej algorytm. Często zdaży się,
+        znajdować się na górze kostki. Narożnik, który chcemy umieścić na jego miejcsu, powinien
+        być bezpośrednio pod nim. Następnie wykonujemy podany poniżej algorytm. Często zdarzy się,
         że po wykonaniu algorytmu, narożnik owszem znajdzie się na swoim miejscu, ale nie będzie
         poprawnie obrócony względem sąsiadujących kolorów. Algorytm należy wtedy powtarzać, aż do
         uzyskania żądanego położenia.
@@ -87,14 +87,18 @@
         Efekt końcowy widoczny jest na poniższych zdjęciach.
     </string>
     <string name="tutorial_second_layer_edges_step_1">
-        Na tym etapie przydadzą się nam dwa algorytmy. Zanim można je będzie jednak zastosować,
+        Na tym etapie przydadzą nam się dwa algorytmy. Zanim można będzie je jednak zastosować,
         należy odpowiednio przygotować kostkę. Obracamy ją żółtą ścianą do góry (od tego momentu,
         na każdym kolejnym etapie układania kostki, będziemy ją trzymać właśnie w ten sposób) i
         wybieramy krawędź, którą chcemy umieścić na właściwym miejscu. Następnie, obracając żółtą
         ścianą, ustawiamy tę krawędź w sposób zaprezentowany na poniższych rysunkach. Część dolna
         krawędzi (ta widoczna na przedniej ścianie) powinna mieć taki sam kolor jak centrum ściany
         przedniej. Część górna powinna być w kolorze takim, jak kolor centrum ściany lewej lub
-        prawej względem ściany przedniej.
+        prawej względem ściany przedniej.\nUwaga! Jeżeli na żółtej ścianie nie znajduje się ani
+        jedna, odpowiadająca powyższym wymaganiom, krawędź, oznacza to, że znajduje się już ona na
+        drugiej warstwie. Jeśli zajdzie potrzeba jej "wyciągnięcia" (przykładowo w celu umieszczenia
+        w innym miejscu), należy w miejscu dolnej krawędzi ściany żółtej umieścić dowolnie wybraną
+        krawędź, a następnie wykonać jeden z poniższych algorytmów.
     </string>
     <string name="tutorial_second_layer_edges_step_2">W tych sytuacjach stosujemy jeden z
         dwóch algorytmów. Algorytm "na prawo"
@@ -119,7 +123,7 @@
     <!-- 5. TUTORIAL YELLOW CROSS EDGES -->
     <string name="tutorial_yellow_cross_edges">5. Krawędzie żółtego krzyża </string>
     <string name="tutorial_yellow_cross_edges_intro">Na tym etapie mamy już ułożony żółty krzyż.
-        Teraz naszym celem będzie umieszczenie żółtych krawędzi na swoich miejsach. Na zdjęciach
+        Teraz naszym celem będzie umieszczenie żółtych krawędzi na swoich miejscach. Na zdjęciach
         poniżej przedstawiony jest wynik ukończenia tego etapu.
     </string>
     <string name="tutorial_yellow_cross_edges_step_1">Obracamy żółtą warstwą i próbujemy dopasować
@@ -168,7 +172,7 @@
     <!-- 7. TUTORIAL YELLOW CROSS CORNERS PART 2 -->
     <string name="tutorial_yellow_cross_corners_rotation">7. Narożniki żółtej warstwy cz.2</string>
     <string name="tutorial_yellow_cross_corners_rotation_intro">Ostatni etap! Mamy już narożniki
-        żółtej warstwy umieszczone na właściwych miejsach. Ostatnim etapem jest ich obrócenie,
+        żółtej warstwy umieszczone na właściwych miejscach. Ostatnim etapem jest ich obrócenie,
         czego wynikiem będzie w pełni ułożona kostka. Algorytm którym tego dokonamy jest niezwykle
         prosty i został już przez nas wykorzystany na etapie drugim. Bardzo istotne jest właściwe
         trzymanie kostki. Powinna być skierowana żółtą ścianą do góry i nie może być w ogóle
@@ -181,4 +185,5 @@
     </string>
     <string name="tutorial_yellow_cross_corners_rotation_step_1">Algorytm:\n<b>R\' \t D\' \tR \t D</b>
     </string>
+    <!-- KONIEC TUTORIALA -->
 </resources>
