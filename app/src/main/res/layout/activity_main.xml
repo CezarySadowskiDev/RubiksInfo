@@ -20,6 +20,7 @@
             android:rowCount="2">
 
             <androidx.cardview.widget.CardView
+                android:id="@+id/mainMenuTutorial"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_rowWeight="1"
@@ -39,16 +40,17 @@
                     <ImageView
                         android:layout_width="100dp"
                         android:layout_height="100dp"
-                        android:src="@mipmap/ic_launcher" />
+                        android:src="@drawable/ic_24_tutorial" />
 
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_marginTop="12dp"
-                        android:text="Test 1"
+                        android:letterSpacing="0.18"
+                        android:text="@string/tutorial"
                         android:textAlignment="center"
                         android:textColor="#fff"
-                        android:textSize="18sp" />
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
 
 
                 </LinearLayout>
@@ -151,7 +153,7 @@
                     <ImageView
                         android:layout_width="100dp"
                         android:layout_height="100dp"
-                        android:src="@mipmap/ic_launcher" />
+                        android:src="@drawable/ic_24_edit_data" />
 
                     <TextView
                         android:layout_width="match_parent"
