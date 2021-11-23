@@ -69,6 +69,7 @@ class StatisticsActivity : AppCompatActivity() {
         val dbFile = context.getDatabasePath(TableInfo.TABLE_NAME)
 
         if (dbFile.exists()) {
+
             val isDataBaseEmpty = dataBaseHelper.getData("solvesCount")[0]
             if (isDataBaseEmpty.toInt() > 0) {
 

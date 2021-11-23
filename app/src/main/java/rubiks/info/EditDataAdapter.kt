@@ -39,7 +39,6 @@ class EditDataAdapter(
         val allDataTextView: TextView = itemView.findViewById(R.id.allDataTV)
         private val editTimeDialog = Dialog(itemView.context)
 
-
         init {
 
             allDataTextView.setOnClickListener {
@@ -130,9 +129,7 @@ class EditDataAdapter(
                 deleteButton.setOnLongClickListener {
 
                     val dataToRemove = changeTimeFormat(allDataList[position])
-
                     dataBaseHelper.removeDataFromDatabase(dataToRemove)
-
                     allDataList.removeAt(position)
 
                     val toast = Toast.makeText(
@@ -179,6 +176,7 @@ class EditDataAdapter(
     }
 
     fun changeTimeFormat(oldFormat: String): String {
+
         val tempTimeMinutes =
             oldFormat.substring(0, oldFormat.indexOf(':')).toInt()
         val tempTimeSeconds =
