@@ -186,4 +186,14 @@
     <string name="tutorial_yellow_cross_corners_rotation_step_1">Algorytm:\n<b>R\' \t D\' \tR \t D</b>
     </string>
     <!-- KONIEC TUTORIALA -->
+    <string name="main_menu_edit_data">Edytuj dane</string>
+    <string name="delete_all_data">Usuń wszystkie dane</string>
+    <string name="confirm_deleting_all_data">Czy na pewno chcesz usunąć wszystkie czasy? Usuniętych
+        czasów nie będzie się dało już przywrócić.</string>
+    <string name="delete_times">Usuń</string>
+    <string name="cancel_deleting_times">Anuluj</string>
+    <string name="edit_data_intro">W tej sekcji możesz przejrzeć wszystkie zapisane wcześniej czasy.
+    Klikając na konkretny czas masz możliwość jego edycji lub usunięcia. Jeżeli chcesz usunąć
+    wszystkie czasy, wystarczy kliknąć na przycisk \"Usuń wszystkie czasy\".</string>
+    <string name="deleting_all_data_confirmation">Usunięto wszystkie czasy.</string>
 </resources>

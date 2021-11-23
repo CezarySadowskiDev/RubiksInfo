@@ -6,14 +6,9 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.Gravity
 import android.view.View
-import android.view.ViewGroup
 import android.widget.LinearLayout
 import android.widget.TableLayout
 import android.widget.TextView
-import androidx.appcompat.widget.LinearLayoutCompat
-import androidx.constraintlayout.widget.ConstraintLayout
-import androidx.constraintlayout.widget.ConstraintSet
-import androidx.core.view.marginTop
 
 class StatisticsActivity : AppCompatActivity() {
 
@@ -32,25 +27,25 @@ class StatisticsActivity : AppCompatActivity() {
 
         val db = DataBaseHelper(this)
 
-        if (databaseExists(this, TableInfo.TABLE_NAME)) {
+        if (databaseExists(this, db)) {
 
             val solvesCountData = findViewById<TextView>(R.id.solvesCountData)
-            solvesCountData.text = db.getData("solvesCount")
+            solvesCountData.text = db.getData("solvesCount")[0]
 
             val meanTimeData = findViewById<TextView>(R.id.meanTimeData)
-            meanTimeData.text = db.getData("meanTime")
+            meanTimeData.text = db.getData("meanTime")[0]
 
             val meanTimeLastTenSolvesData = findViewById<TextView>(R.id.meanTimeLastTenSolvesData)
-            meanTimeLastTenSolvesData.text = db.getData("meanTimeLastTenSolves")
+            meanTimeLastTenSolvesData.text = db.getData("meanTimeLastTenSolves")[0]
 
             val bestTimeData = findViewById<TextView>(R.id.bestTimeData)
-            bestTimeData.text = db.getData("bestTime")
+            bestTimeData.text = db.getData("bestTime")[0]
 
             val worstTimeData = findViewById<TextView>(R.id.worstTimeData)
-            worstTimeData.text = db.getData("worstTime")
+            worstTimeData.text = db.getData("worstTime")[0]
 
             val timeSpendOnSolvingData = findViewById<TextView>(R.id.timeSpendOnSolvingData)
-            timeSpendOnSolvingData.text = db.getData("timeSpendOnSolving")
+            timeSpendOnSolvingData.text = db.getData("timeSpendOnSolving")[0]
 
         } else {
 
@@ -69,10 +64,18 @@ class StatisticsActivity : AppCompatActivity() {
         }
     }
 
-    private fun databaseExists(context: Context, databaseName: String): Boolean {
+    private fun databaseExists(context: Context, dataBaseHelper: DataBaseHelper): Boolean {
 
-        val dbFile = context.getDatabasePath(databaseName)
-        return dbFile.exists()
+        val dbFile = context.getDatabasePath(TableInfo.TABLE_NAME)
 
+        if (dbFile.exists()) {
+            val isDataBaseEmpty = dataBaseHelper.getData("solvesCount")[0]
+            if (isDataBaseEmpty.toInt() > 0) {
+
+                return true
+            }
+        }
+
+        return false
     }
 }

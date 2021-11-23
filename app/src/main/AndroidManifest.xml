@@ -9,6 +9,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.RubiksInfo">
+        <activity android:name=".EditDataActivity" />
         <activity android:name=".TutorialActivity" />
         <activity android:name=".StatisticsActivity" />
         <activity android:name=".StopwatchActivity" />
