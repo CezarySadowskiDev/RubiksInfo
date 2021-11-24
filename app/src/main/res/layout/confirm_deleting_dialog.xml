@@ -23,7 +23,8 @@
             android:text="@string/confirm_deleting_all_data"
             android:textAlignment="center"
             android:textColor="#fff"
-            android:textSize="20sp" />
+            android:textSize="20sp"
+            android:padding="10dp"/>
 
     </LinearLayout>
 
