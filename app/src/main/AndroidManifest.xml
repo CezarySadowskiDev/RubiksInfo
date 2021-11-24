@@ -9,11 +9,21 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.RubiksInfo">
-        <activity android:name=".EditDataActivity" />
-        <activity android:name=".TutorialActivity" />
-        <activity android:name=".StatisticsActivity" />
-        <activity android:name=".StopwatchActivity" />
-        <activity android:name=".MainActivity">
+        <activity
+            android:name=".EditDataActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".TutorialActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".StatisticsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".StopwatchActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".MainActivity"
+            android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
