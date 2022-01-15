@@ -27,5 +27,11 @@ class MainActivity : AppCompatActivity() {
             val intent = Intent(this, TutorialActivity::class.java)
             startActivity(intent)
         }
+
+        val editDataCardView = findViewById<CardView>(R.id.mainMenuEditData)
+        editDataCardView.setOnClickListener {
+            val intent = Intent(this, EditDataActivity::class.java)
+            startActivity(intent)
+        }
     }
 }

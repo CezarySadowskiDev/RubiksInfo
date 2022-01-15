@@ -78,7 +78,7 @@
         poprawnie obrócony względem sąsiadujących kolorów. Algorytm należy wtedy powtarzać, aż do
         uzyskania żądanego położenia.
     </string>
-    <string name="tutorial_white_face_corners_step_2">Algorytm:\n<b>R\' \t D\' \tR \t D</b>
+    <string name="tutorial_white_face_corners_step_2">Algorytm:\n<b>R\'\tD\'\tR\tD</b>
     </string>
     <!-- 3. TUTORIAL SECOND LAYER EDGES -->
     <string name="tutorial_second_layer_edges">3. Krawędzie drugiej warstwy</string>
@@ -103,11 +103,11 @@
     <string name="tutorial_second_layer_edges_step_2">W tych sytuacjach stosujemy jeden z
         dwóch algorytmów. Algorytm "na prawo"
         (sytuacja z rysunku pierwszego) lub algorytm "na lewo"
-        (rysunek drugi).\n\nAlgorytm "na prawo":\n<b>U \tR \tU\'\t R\'\t U\' \tF\' \tU\tF
+        (rysunek drugi).\n\nAlgorytm "na prawo":\n<b>U\tR\tU\'\tR\'\tU\'\tF\'\tU\tF
         </b>
     </string>
     <string name="tutorial_second_layer_edges_step_3">Algorytm
-        "na lewo":\n<b>U\' \t L\' \t U \t L \t U \t F \t U\' \tF\'</b>
+        "na lewo":\n<b>U\'\tL\' \tU\tL \tU\tF \tU\'\tF\'</b>
     </string>
     <!-- 4. TUTORIAL YELLOW CROSS -->
     <string name="tutorial_yellow_cross">4. Żółty krzyż</string>
@@ -118,7 +118,7 @@
         bardzo ważne jest odpowiednie trzymanie kostki. Na każdym etapie powinna być trzymana w
         sposób ukazany na poniższych rysunkach.
     </string>
-    <string name="tutorial_yellow_cross_step_1">Algorytm:\n<b>F \tR\tU\tR\'\t U\'\t F\'</b>
+    <string name="tutorial_yellow_cross_step_1">Algorytm:\n<b>F \tR\tU\tR\'\tU\'\tF\'</b>
     </string>
     <!-- 5. TUTORIAL YELLOW CROSS EDGES -->
     <string name="tutorial_yellow_cross_edges">5. Krawędzie żółtego krzyża </string>
@@ -146,7 +146,7 @@
         algorytm, a po jego ukończeniu obracamy żółtą ścianę i dopasowujemy wszystkie krawędzie do
         ścian bocznych.
     </string>
-    <string name="tutorial_yellow_cross_edges_step_6">Algorytm:\n<b>R \tU \tR\' \tU \tR \tU \tU \tR\'</b>
+    <string name="tutorial_yellow_cross_edges_step_6">Algorytm:\n<b>R\tU\tR\'\tU\tR\tU\tU\tR\'</b>
     </string>
     <!-- 6. TUTORIAL YELLOW CROSS CORNERS PART 1 -->
     <string name="tutorial_yellow_cross_corners">6. Narożniki żółtej warstwy cz.1</string>
@@ -166,8 +166,7 @@
         kostki, a po jego wykonaniu ustawić kostkę zgodnie z wcześniejszą instrukcją. Następnie
         algorytm należy powtarzać, aż wszystkie 4 narożniki znajdą się na swoich miejscach.
     </string>
-    <string name="tutorial_yellow_cross_corners_step_2">Algorytm:\n<b>U \tR \tU\' \tL\' \tU
-        \tR\' \tU\' \tL</b>
+    <string name="tutorial_yellow_cross_corners_step_2">Algorytm:\n<b>U\tR\tU\'\tL\' \tU\tR\'\tU\'\tL</b>
     </string>
     <!-- 7. TUTORIAL YELLOW CROSS CORNERS PART 2 -->
     <string name="tutorial_yellow_cross_corners_rotation">7. Narożniki żółtej warstwy cz.2</string>
@@ -183,7 +182,17 @@
         poniższy algorytm na chwilę "zepsujemy" całą kostkę. Nie należy się tym jednak przejmować,
         gdyż po ukończeniu całego procesu, wszystkie elementy kostki wrócą na swoje miejsce.
     </string>
-    <string name="tutorial_yellow_cross_corners_rotation_step_1">Algorytm:\n<b>R\' \t D\' \tR \t D</b>
+    <string name="tutorial_yellow_cross_corners_rotation_step_1">Algorytm:\n<b>R\'\tD\'\tR\tD</b>
     </string>
     <!-- KONIEC TUTORIALA -->
+    <string name="main_menu_edit_data">Edytuj dane</string>
+    <string name="delete_all_data">Usuń wszystkie dane</string>
+    <string name="confirm_deleting_all_data">Czy na pewno chcesz usunąć wszystkie czasy? Usuniętych
+        czasów nie będzie się dało już przywrócić.</string>
+    <string name="delete_times">Usuń</string>
+    <string name="cancel_deleting_times">Anuluj</string>
+    <string name="edit_data_intro">W tej sekcji możesz przejrzeć wszystkie zapisane wcześniej czasy.
+    Klikając na konkretny czas masz możliwość jego edycji lub usunięcia. Jeżeli chcesz usunąć
+    wszystkie czasy, wystarczy kliknąć na przycisk \"Usuń wszystkie czasy\".</string>
+    <string name="deleting_all_data_confirmation">Usunięto wszystkie czasy.</string>
 </resources>

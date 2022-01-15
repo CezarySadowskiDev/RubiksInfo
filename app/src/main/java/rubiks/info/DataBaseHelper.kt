@@ -1,5 +1,6 @@
 package rubiks.info
 
+import android.content.ContentValues
 import android.content.Context
 import android.database.sqlite.SQLiteDatabase
 import android.database.sqlite.SQLiteOpenHelper
@@ -31,64 +32,119 @@ class DataBaseHelper(context: Context) : SQLiteOpenHelper(context, TableInfo.TAB
         onCreate(p0)
     }
 
-    fun getData(dataType: String): String {
+    fun updateRow(timeToBeUpdated: String, newTime: String) {
+        val db = this.writableDatabase
+
+        val contentValues = ContentValues()
+        contentValues.put(TableInfo.TABLE_COLUMN_TIME, newTime)
+
+        db.update(
+            TableInfo.TABLE_NAME,
+            contentValues,
+            "_id IN (SELECT max(_id) FROM ${TableInfo.TABLE_NAME} WHERE ${TableInfo.TABLE_COLUMN_TIME} = $timeToBeUpdated)",
+            null
+        )
+    }
+
+    fun getData(dataType: String): ArrayList<String> {
         val db = this.readableDatabase
 
         when (dataType) {
+            "allData" -> {
+                val addDataList = arrayListOf<String>()
+                val cursor = db.rawQuery(
+                    "SELECT ${TableInfo.TABLE_COLUMN_TIME} FROM ${TableInfo.TABLE_NAME}",
+                    null
+                )
+
+                if (cursor.moveToFirst()) {
+                    while (!cursor.isAfterLast) {
+                        val time =
+                            formatTime(cursor.getString(cursor.getColumnIndex(TableInfo.TABLE_COLUMN_TIME)))
+                        addDataList.add(time)
+
+                        cursor.moveToNext()
+                    }
+                }
+
+                cursor.close()
+
+                return addDataList
+            }
             "solvesCount" -> {
-                return executeQuery(db, "SELECT count(*) FROM ${TableInfo.TABLE_NAME}")
+                return arrayListOf(executeQuery(db, "SELECT count(*) FROM ${TableInfo.TABLE_NAME}"))
             }
             "meanTime" -> {
-                return formatTime(
-                    executeQuery(
-                        db,
-                        "SELECT avg(${TableInfo.TABLE_COLUMN_TIME}) " +
-                                "FROM ${TableInfo.TABLE_NAME}"
+                return arrayListOf(
+                    formatTime(
+                        executeQuery(
+                            db,
+                            "SELECT avg(${TableInfo.TABLE_COLUMN_TIME}) " +
+                                    "FROM ${TableInfo.TABLE_NAME}"
+                        )
                     )
                 )
             }
             "meanTimeLastTenSolves" -> {
-                return formatTime(
-                    executeQuery(
-                        db,
-                        "SELECT avg(${TableInfo.TABLE_COLUMN_TIME}) " +
-                                "FROM (SELECT ${TableInfo.TABLE_COLUMN_TIME} " +
-                                "FROM ${TableInfo.TABLE_NAME} " +
-                                "ORDER BY _id DESC LIMIT 10)"
+                return arrayListOf(
+                    formatTime(
+                        executeQuery(
+                            db,
+                            "SELECT avg(${TableInfo.TABLE_COLUMN_TIME}) " +
+                                    "FROM (SELECT ${TableInfo.TABLE_COLUMN_TIME} " +
+                                    "FROM ${TableInfo.TABLE_NAME} " +
+                                    "ORDER BY _id DESC LIMIT 10)"
+                        )
                     )
                 )
             }
             "bestTime" -> {
-                return formatTime(
-                    executeQuery(
-                        db,
-                        "SELECT ${TableInfo.TABLE_COLUMN_TIME} " +
-                                "FROM ${TableInfo.TABLE_NAME} " +
-                                "ORDER BY ${TableInfo.TABLE_COLUMN_TIME} ASC LIMIT 1"
+                return arrayListOf(
+                    formatTime(
+                        executeQuery(
+                            db,
+                            "SELECT ${TableInfo.TABLE_COLUMN_TIME} " +
+                                    "FROM ${TableInfo.TABLE_NAME} " +
+                                    "ORDER BY ${TableInfo.TABLE_COLUMN_TIME} ASC LIMIT 1"
+                        )
                     )
                 )
             }
             "worstTime" -> {
-                return formatTime(
-                    executeQuery(
-                        db,
-                        "SELECT ${TableInfo.TABLE_COLUMN_TIME} " +
-                                "FROM ${TableInfo.TABLE_NAME} " +
-                                "ORDER BY ${TableInfo.TABLE_COLUMN_TIME} DESC LIMIT 1"
+                return arrayListOf(
+                    formatTime(
+                        executeQuery(
+                            db,
+                            "SELECT ${TableInfo.TABLE_COLUMN_TIME} " +
+                                    "FROM ${TableInfo.TABLE_NAME} " +
+                                    "ORDER BY ${TableInfo.TABLE_COLUMN_TIME} DESC LIMIT 1"
+                        )
                     )
                 )
             }
             "timeSpendOnSolving" -> {
-                return formatTime(
-                    executeQuery(
-                        db,
-                        "SELECT sum(${TableInfo.TABLE_COLUMN_TIME}) FROM ${TableInfo.TABLE_NAME}"
+                return arrayListOf(
+                    formatTime(
+                        executeQuery(
+                            db,
+                            "SELECT sum(${TableInfo.TABLE_COLUMN_TIME}) FROM ${TableInfo.TABLE_NAME}"
+                        )
                     )
                 )
             }
         }
 
-        return "0"
+        return arrayListOf("0")
+    }
+
+    fun removeDataFromDatabase(time: String) {
+        val db = this.writableDatabase
+
+        db.delete(
+            TableInfo.TABLE_NAME,
+            "_id IN (SELECT max(_id) FROM ${TableInfo.TABLE_NAME} WHERE ${TableInfo.TABLE_COLUMN_TIME} = $time)",
+            null
+        )
     }
 
     private fun executeQuery(dataBase: SQLiteDatabase, query: String): String {
